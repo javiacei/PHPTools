@@ -1,0 +1,44 @@
+# Vim
+apt-get install vim -y
+
+# Git
+apt-get install git -y
+
+# Gnome-do
+apt-get install gnome-do -y
+
+# Flash for Mozilla
+apt-get install flashplugin-nonfree -y
+
+# Apache2, Mysql, PHP5
+apt-get install lamp-server^ -y
+
+# Pear
+apt-get install php-pear -y
+pear channel-update pear.php.net
+pear upgrade-all
+
+# Phing
+pear channel-discover pear.phing.info
+pear install phing/phing
+
+# Xdebug
+pecl install xdebug
+
+# XSL Extension
+apt-get install php5-xsl
+
+# PHPUnit 3.5.14
+pear channel-discover pear.phpunit.de
+pear channel-discover components.ez.no
+pear channel-discover pear.symfony-project.com
+pear -d preferred_state=beta install phpunit/PHPUnit
+apt-get install phpunit -y
+
+# PHP Depend
+pear channel-discover pear.pdepend.org
+pear install pdepend/PHP_Depend-beta
+
+# PHP Code Sniffer
+pear install PHP_CodeSniffer
+
