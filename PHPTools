@@ -42,3 +42,8 @@ pear install pdepend/PHP_Depend-beta
 # PHP Code Sniffer
 pear install PHP_CodeSniffer
 
+# PHP Documentor
+pear install PhpDocumentor
+
+# PHP Sqlite
+apt-get install php5-sqlite
