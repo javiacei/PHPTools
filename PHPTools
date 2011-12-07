@@ -16,12 +16,10 @@ pecl install xdebug
 # XSL Extension
 apt-get install php5-xsl
 
-# PHPUnit 3.5.14
-pear channel-discover pear.phpunit.de
-pear channel-discover components.ez.no
-pear channel-discover pear.symfony-project.com
-pear -d preferred_state=beta install phpunit/PHPUnit
-apt-get install phpunit -y
+# PHPUnit 3.6
+pear config-set auto_discover 1
+pear install pear.phpunit.de/PHPUnit
+
 
 # PHP Depend
 pear channel-discover pear.pdepend.org
