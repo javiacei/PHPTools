@@ -36,3 +36,8 @@ apt-get install php5-sqlite
 
 # PHP Curl
 apt-get install curl libcurl3 libcurl3-dev php5-curl -y
+
+# PHP GD library
+apt-get install php5-gd
+
+
